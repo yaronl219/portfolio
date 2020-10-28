@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { dataService } from '../service/dataService'
-import DoubleArrowRoundedIcon from '@material-ui/icons/DoubleArrowRounded';
-import { IconButton } from '@material-ui/core';
 import { Carousel } from 'react-responsive-carousel';
 
 

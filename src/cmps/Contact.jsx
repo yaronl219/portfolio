@@ -5,6 +5,7 @@ import { useLocation } from 'react-router-dom'
 import PersonIcon from '@material-ui/icons/Person';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { redirectService } from '../service/redirectService';
+const cvLink = require('../assets/CV/Yaron Lipshitz Full Stack Dev CV.pdf')
 
 export function Contact() {
 
@@ -37,7 +38,7 @@ export function Contact() {
                     <div className="call-to-action">
                         <h2>Let's Chat!</h2>
                         <h3>I'm currently seeking a position as a Front-End or Fullstack Developer</h3>
-                        <button className="cta-cv">Download my CV</button>
+                        <button className="cta-cv" onClick={() => {window.open(cvLink.default)}}>Download my CV</button>
                     </div>
                     <div className="contact-info-container">
                         <div className="contact-info">

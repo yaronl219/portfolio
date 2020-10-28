@@ -1,6 +1,6 @@
 const opusImg = require('../assets/imgs/opus.png')
 const weatherImg = require('../assets/imgs/weather.png')
-const snakeImg = require('../assets/imgs/snake.png')
+// const snakeImg = require('../assets/imgs/snake.png')
 const memeImg = require('../assets/imgs/memegen.png')
 
 

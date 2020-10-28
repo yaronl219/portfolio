@@ -1,7 +1,6 @@
 import { Collapse } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { redirectService } from '../service/redirectService'
 
 export function Hero() {
 

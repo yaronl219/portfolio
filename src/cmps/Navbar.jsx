@@ -1,7 +1,7 @@
 import { AppBar, Tabs, Tab } from '@material-ui/core'
 import React, { useEffect, useState } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
-// import { NavLink } from 'react-router-dom'
+
 
 export default function Navbar({views}) {
 
