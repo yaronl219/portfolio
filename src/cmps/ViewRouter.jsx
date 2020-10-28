@@ -48,9 +48,16 @@ export function ViewRouter({views}) {
     history.push(views[view-1])
   }
 
-  return (
+  function onSwipe(view,transition) {
+    if (transition === 'end') {
+      history.push(views[view])
+    }
+  }
+
+    return (
     <div onWheelCapture={onScroll}>
-      <SwipeableViews axis="y" resistance index={view} animateHeight ref={ref}>
+
+      <SwipeableViews onSwitching={onSwipe} axis="y" resistance index={view} animateHeight ref={ref}>
         <Hero />
         <Projects />
         <Tech />
