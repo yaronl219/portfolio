@@ -8,7 +8,9 @@ export function TechTab(props) {
     }
     
     return (
-        <div onClick={() => props.setOpen(props.tab)} style={{ backgroundColor: props.data.color, backgroundImage:props.data.backgroundImg }} className={`tab tab-${getClassName()}`}>
+        // <div onClick={() => props.setOpen(props.tab)} style={{ backgroundColor: props.data.color, backgroundImage:props.data.backgroundImg }} className={`tab tab-${getClassName()}`}>
+        <div onClick={() => props.setOpen(props.tab)} style={{ backgroundColor: props.data.color }} className={`tab tab-${getClassName()}`}>
+            <div className="cutoff-placeholder" />
             <div className={`title title-${getClassName()}`}>
                 <h2>
                     {props.data.title}
@@ -18,10 +20,11 @@ export function TechTab(props) {
                 <ul>
                     {props.data.content.map((item, idx) => <li 
                     key={idx}>
-                        <div className="item-img">
-                        <img src={item.logo} 
+                        <div className="item-img" style={{backgroundImage:`url(${item.logo})`}} />
+                            
+                        {/* <img src={item.logo} 
                         alt={item.text}/
-                        ></div>
+                        ></div> */}
                         <div className="item-text">
                             {item.text}
                             </div>

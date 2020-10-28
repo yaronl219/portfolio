@@ -28,6 +28,7 @@ export function Hero() {
     return (
         <section className="hero-section">
             <div className="hero-container">
+                <div className="horizontal-cutoff" />
                 <div className="hero-overlay">
                     <div className="title-container">
                         <h1 className="title">Yaron Lipshitz</h1>
@@ -38,7 +39,7 @@ export function Hero() {
                     </div>
                     <div className="about-container">
                         <h2>Me</h2>
-                        <p>After ten years in customer-facing and management roles, the last two and half of them at a wonderful startup company, I've decided to take the plunge and switch to development.</p>
+                        {/* <p>After ten years in customer-facing and management roles, the last two and half of them at a wonderful startup company, I've decided to take the plunge and switch to development.</p> */}
                         <p>I'm very passionate about UX, Frontend development, and finding creative solutions to rising issues. <span onClick={() => {history.push('/contact')}}>Let's talk about your next project!</span></p>
                     </div>
                 </div>

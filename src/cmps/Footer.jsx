@@ -1,11 +1,8 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+
 import ContactButtons from './ContactButtons';
 
-export default function Footer() {
-
-    const location = useLocation()
-    
+export default function Footer({elInView}) {
 
     return (
         <div className="footer">
@@ -13,7 +10,7 @@ export default function Footer() {
                 <small>All rights reserved</small><br />
                 <small>Yaron Lipshitz</small>
             </div>
-            <div className={`contact-btns-container contact-${(location.pathname === '/contact') ? 'hidden' : 'visible'}`}>
+            <div className={`contact-btns-container contact-${(elInView === '/contact') ? 'hidden' : 'visible'}`}>
                 <ContactButtons />
             </div>
         </div>

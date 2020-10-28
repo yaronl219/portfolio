@@ -3,9 +3,6 @@ $margin: 6.2rem;
 
 .App {
     position: relative;
-    section {
-        height: calc(#{$screen_height} - #{$margin});
-    }
 
 }
 
@@ -14,3 +11,26 @@ $margin: 6.2rem;
     height: 100%;
     // padding-top: 5rem;
 }
+
+.cta {
+    cursor: pointer;
+    border: 1px solid white;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'roboto';
+    font-weight: 700;
+    background-color: rgb(64,64,64);
+    background-image: linear-gradient(white,white);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .3s, color .3s;
+  }
+  .cta:hover {
+    
+    background-size: 100% 100%;
+    color: rgb(64,64,64);
+  }

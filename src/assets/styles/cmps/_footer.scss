@@ -1,28 +1,51 @@
 .footer {
+    position: fixed;
+    z-index: 9;
     height: 3rem;
     width: 100%;
     display: flex;
     padding: 0 1rem;
     justify-content: space-between;
-
+    bottom: 0px;
+    background-color: rgb(32,32,32);
 }
 .copyrights {
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    small {
+
+        margin-right: 0.5rem;
+    }
 }
 
 .contact-btns {
-    
+    display: flex;
     span{
         color: white;
         &:hover {
-            color: #1877f2
+            color: red;
         }
     }
 }
 .contact-btns-container {
     transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .contact-hidden {
     opacity: 0%;
     visibility: hidden;
+}
+
+@media screen and (max-width: 350px) {
+    .contact-btns {
+
+        button {
+            padding: 6px;
+        }
+    }
 }

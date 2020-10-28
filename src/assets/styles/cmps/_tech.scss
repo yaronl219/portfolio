@@ -1,23 +1,49 @@
 .tech-container {
     display: flex;
     // height: 90vh;
+    width: 100%;
+    overflow-x: hidden;
     text-align: center;
     color: white;
+    position: relative;
+    .cutoff-placeholder {
+        height: 10rem;
+    }
+    .horizontal-cutoff {
+        position: absolute;
+        width: 100%;
+        height: 8rem;
+        top: -1px;
+        z-index: 1;
+        background-image: linear-gradient(183deg, rgb(64,64,64) 50%, rgba(0,0,0,0) 50%);
+      }
 }
 
 .tab {
-    padding: 10px 0px;
+    
+    background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(32,32,32,1) 10%, rgba(32,32,32,1) 90%, rgba(64,64,64,1) 100%);
+    
+    transform: translate3d(0,0,0);
+        padding: 10px 0px;
     transition: 0.3s;
     .title {
+        // transform: translateZ(0);
         transition: 0.3s;
     }
     .content {
+        transform: translateZ(0);
         transition: 0.5s;
     }
 }
 
 .tab-closed {
+    transform: translateZ(0);
     width: 80px;
+    &:hover .title-closed {
+        transition: 0.1s;
+        color: red;
+    }
+
     cursor: pointer;
     img {
         width: 0;
@@ -25,17 +51,26 @@
 }
 
 .tab-open {
+    transform: translateZ(360);
     flex-grow: 1;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    li {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0.5rem;
+    }
     .item-img {
         margin: 0.5rem auto;
-        max-width: 5rem;
-        width: 25%;
-        img {
-            width: 100%;
-        }
+        max-width: 7.5rem;
+        flex-grow: 1;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
     }
     .item-text {
         color: white;
@@ -52,12 +87,14 @@
 }
 .title-closed {
     // display: flex;
-    transform:matrix(0.00,-1.00,1.00,0.00,0,150);
-    
+    cursor: pointer;
+    // transform:matrix(0.00,-1.00,1.00,0.00,0,150);
+    transform: rotate(-90deg)
 }
 
 .title-open {
     font-size: 1.2rem;
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -68,18 +105,22 @@ ul {
 
 .content-closed {
     opacity: 0;
+    
     transform: translateY(300px);
 }
 
 .content-open {
     opacity: 1;
-    flex-grow: 1;
+    
+    height: 90vh;
+    padding: 2rem;
     ul {
         cursor: default;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+
     }
 }
 
@@ -87,9 +128,11 @@ ul {
     .title-open{
         h2 {
             font-size: 1.5rem;
+            
         }
     }
     .tab-closed {
         width: 60px;
     }
 }
+

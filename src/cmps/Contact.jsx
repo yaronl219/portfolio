@@ -1,44 +1,46 @@
 import { Fade } from '@material-ui/core'
 import { AlternateEmail, Facebook, GitHub, LinkedIn } from '@material-ui/icons'
 import React, { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
 import PersonIcon from '@material-ui/icons/Person';
 import PhoneIcon from '@material-ui/icons/Phone';
 import { redirectService } from '../service/redirectService';
 const cvLink = require('../assets/CV/Yaron Lipshitz Full Stack Dev CV.pdf')
 
-export function Contact() {
+export function Contact({elInView}) {
 
-    const [isInView, setInView] = useState(false)
+    // const [isInView, setInView] = useState(false)
     const [displayText, setDisplayText] = useState(false)
-    const location = useLocation()
+    // const location = useLocation()
 
     useEffect(() => {
-        if (location.pathname === '/contact') {
-            setInView(true)
-            setTimeout(() => {
+        if (elInView === '/contact') {
+            // setInView(true)
                 setDisplayText(true)
-            }, 1000)
+            // setTimeout(() => {
+                //     setDisplayText(true)
+            // }, 1000)
         }
         return () => {
 
-            setInView(false)
+            // setInView(false)
             setDisplayText(false)
 
         }
-    }, [location.pathname])
+    }, [elInView])
 
-
+    function onClickChat() {
+        window.open('https://api.whatsapp.com/send?phone=972525595204')
+    }
     return (
         <section className="contact-section">
-            <div className={`background ${(isInView) ? 'background-regular' : 'background-wide'}`}>
-            </div>
+            {/* <div className={`background ${(isInView) ? 'background-regular' : 'background-wide'}`} /> */}
+            
             <Fade in={displayText}>
                 <div className="content-container">
                     <div className="call-to-action">
-                        <h2>Let's Chat!</h2>
+                        <h2>Let's <span onClick={onClickChat}>Chat!</span></h2>
                         <h3>I'm currently seeking a position as a Front-End or Fullstack Developer</h3>
-                        <button className="cta-cv" onClick={() => {window.open(cvLink.default)}}>Download my CV</button>
+                        <button className="cta" onClick={() => {window.open(cvLink.default)}}>Download my CV</button>
                     </div>
                     <div className="contact-info-container">
                         <div className="contact-info">

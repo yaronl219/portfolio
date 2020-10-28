@@ -3,24 +3,29 @@ import React, { useEffect, useState } from 'react'
 import { useHistory, useLocation } from 'react-router-dom'
 
 
-export default function Navbar({views}) {
+export default function Navbar({views, elInView}) {
 
     const location = useLocation()
     const history = useHistory()
     const [view, setView] = useState(0)
+    
     useEffect(() => {
-  
       const currView = views.findIndex(route => route === location.pathname)
-  
       if (currView < 0) return
-  
       setView(currView)
     }, [location.pathname])
+
+    useEffect(() => {
+        const currView = views.findIndex(view => view === elInView)
+        if (currView < 0) return
+        setView(currView)
+    },[elInView])
 
     function handleChange(ev,val) {
         setView(val)
         history.push(views[val])
     }
+
 
     return (
         <nav>
@@ -32,6 +37,7 @@ export default function Navbar({views}) {
                     <Tab label="Contact"  />
                 </Tabs>
             </AppBar>
+
         </nav>
     )
 }
