@@ -1,0 +1,28 @@
+.footer {
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+
+}
+.copyrights {
+    color: white;
+}
+
+.contact-btns {
+    
+    span{
+        color: white;
+        &:hover {
+            color: #1877f2
+        }
+    }
+}
+.contact-btns-container {
+    transition: 0.3s;
+}
+.contact-hidden {
+    opacity: 0%;
+    visibility: hidden;
+}

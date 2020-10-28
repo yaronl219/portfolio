@@ -1,0 +1,16 @@
+$screen_height: 100vh;
+$margin: 6rem;
+
+.App {
+    position: relative;
+    section {
+        height: calc(#{$screen_height} - #{$margin});
+    }
+
+}
+
+
+.main {
+    height: 100%;
+    // padding-top: 5rem;
+}

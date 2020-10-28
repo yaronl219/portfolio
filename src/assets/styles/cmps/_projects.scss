@@ -1,0 +1,85 @@
+.projects-container {
+    background: linear-gradient(to top, rgb(180,0,0) 0%, #404040 45%);
+    display: flex;
+    flex-direction: column;
+    
+    .cta-btn {
+        margin-top: 1rem;
+        cursor: pointer;
+        padding: 0.75rem 2rem;
+        color: white;
+        font-weight: 700;
+        background-color: red;
+        border-radius: 15px;
+        border: none;
+        font-size: 1rem;
+        font-family: 'roboto';
+    }
+}
+
+
+.center-container {
+    height: 100%;
+}
+
+.proj-description {
+    transition: 0.1s;
+    margin: 1rem auto;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    color: white;
+    flex-grow: 1;
+    .text-container {
+        padding: 1rem;
+        h3 {
+            text-align: center;
+            margin: 0.5rem;
+        }
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+        }
+    }
+}
+
+.carousel .slide {
+    // overiding the library
+    background-color: rgb(64,64,64) !important;
+}
+
+
+.proj-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        width: 60%;
+        max-width: 680px;
+    }
+}
+
+.left-btn-container,
+.right-btn-container {
+    span {
+        cursor: pointer;
+        color: white;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.left-btn-container {
+    transform: rotate(-180deg);
+}
+
+@media screen and (max-width: 45rem) {
+    .proj-img-container div {
+        width: 90%;
+    }
+}

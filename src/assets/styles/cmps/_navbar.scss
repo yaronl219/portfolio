@@ -1,0 +1,22 @@
+.app-header {
+    height: 3rem;
+    padding: 0 0.5rem;
+    display: flex;
+    background-color: rgb(32,32,32);
+    justify-content: center;
+}
+
+.logo {
+    flex-grow: 1;
+}
+.nav-app-bar {
+    .MuiTabs-indicator {
+        background-color: red;
+    }
+    box-shadow: none !important; 
+    div {
+        
+        background-color: rgb(32,32,32);
+    }
+
+}

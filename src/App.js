@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import './assets/styles/global.scss'
+
+import Navbar from './cmps/Navbar';
+import Footer from './cmps/Footer';
+import {ViewRouter} from './cmps/ViewRouter';
+
 
 function App() {
+  const views = ['/', '/projects', '/tech', '/contact']
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="app-header">
+        <Navbar views={views}/>
       </header>
+      <main className="main">
+        <ViewRouter views={views}/>
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

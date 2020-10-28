@@ -1,0 +1,180 @@
+.hero-section {
+    background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+}
+
+.hero-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    .hero-placeholder {
+        flex-grow: 1;
+        background-color: rgb(32,32,32);
+    }
+    .img-container {
+        flex-grow: 1;
+        background-color: rgb(64,64,64);
+        background-image: url('../../imgs/yaron_baw.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        background: rgb(32,32,32);
+        background: linear-gradient(90deg, rgba(32,32,32,1) 52%, rgba(64,64,64,0.49) 60%, rgba(0,159,252,0) 100%);
+        width: 100%;
+        height: 100%;
+        color: white;
+        padding: 0.75rem;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5rem;
+        justify-content: space-between;
+        .title {
+            font-size: 10vw;
+        }
+        .second span {
+            transition: 0.3s;
+            font-size: xx-large;
+            display: inline-block;
+        }
+
+        .hidden {
+            transform: translateY(-2rem);
+            opacity: 0%;
+        }
+
+        .about-container {
+            // position: absolute;
+            // bottom: 15%;
+            width: 50rem;
+            max-width: 60%;
+            
+            p{
+              font-size: 100%;
+             span {
+                cursor: pointer;
+                font-weight: 500;
+                &:hover {
+                    color: red;
+                }
+            }
+          }
+        }
+        
+    }
+}
+
+.tagline-container {
+    display: flex;
+    font-size: 4vw;
+    .word {
+        margin-right: 1rem;
+        font-weight: 500;
+    }
+    .developer {
+        color: red
+    }
+}
+
+.scroll-down-container {
+    position: absolute;
+    left: 50%;
+    transition: 0.5s;
+    bottom: 5rem;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+
+@media screen and (min-width: 130rem) {
+  .hero-container .hero-overlay .about-container {
+    h2 {
+      font-size: 4rem;
+    }
+    width: 50%;
+    p {
+    font-size: 3rem;
+  }
+}
+}
