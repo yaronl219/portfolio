@@ -1,28 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b770c93e.chunk.css",
-    "main.js": "/portfolio/static/js/main.0a05ea1b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0a05ea1b.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.511916cc.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.511916cc.js.map",
-    "static/js/2.bc7c4595.chunk.js": "/portfolio/static/js/2.bc7c4595.chunk.js",
-    "static/js/2.bc7c4595.chunk.js.map": "/portfolio/static/js/2.bc7c4595.chunk.js.map",
-    "static/js/3.1f9f276d.chunk.js": "/portfolio/static/js/3.1f9f276d.chunk.js",
-    "static/js/3.1f9f276d.chunk.js.map": "/portfolio/static/js/3.1f9f276d.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.6c147bf5.chunk.css",
+    "main.js": "/portfolio/static/js/main.9782c810.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9782c810.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.7ad22267.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.7ad22267.js.map",
+    "static/js/2.ca486dce.chunk.js": "/portfolio/static/js/2.ca486dce.chunk.js",
+    "static/js/2.ca486dce.chunk.js.map": "/portfolio/static/js/2.ca486dce.chunk.js.map",
+    "static/js/3.28375e6d.chunk.js": "/portfolio/static/js/3.28375e6d.chunk.js",
+    "static/js/3.28375e6d.chunk.js.map": "/portfolio/static/js/3.28375e6d.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.b770c93e.chunk.css.map": "/portfolio/static/css/main.b770c93e.chunk.css.map",
-    "static/js/2.bc7c4595.chunk.js.LICENSE.txt": "/portfolio/static/js/2.bc7c4595.chunk.js.LICENSE.txt",
+    "static/css/main.6c147bf5.chunk.css.map": "/portfolio/static/css/main.6c147bf5.chunk.css.map",
+    "static/js/2.ca486dce.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ca486dce.chunk.js.LICENSE.txt",
     "static/media/Yaron Lipshitz Full Stack Dev CV.pdf": "/portfolio/static/media/Yaron Lipshitz Full Stack Dev CV.4e27aadc.pdf",
+    "static/media/avazon.png": "/portfolio/static/media/avazon.c7fddaa9.png",
     "static/media/html canvas.png": "/portfolio/static/media/html canvas.edce47ef.png",
     "static/media/memegen.png": "/portfolio/static/media/memegen.05ed1a31.png",
     "static/media/opus.png": "/portfolio/static/media/opus.dd2de7f6.png",
+    "static/media/snake.png": "/portfolio/static/media/snake.e8145735.png",
     "static/media/weather.png": "/portfolio/static/media/weather.f3a2c153.png",
     "static/media/global.scss": "/portfolio/static/media/yaron_baw.aaafe80e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.511916cc.js",
-    "static/js/2.bc7c4595.chunk.js",
-    "static/css/main.b770c93e.chunk.css",
-    "static/js/main.0a05ea1b.chunk.js"
+    "static/js/runtime-main.7ad22267.js",
+    "static/js/2.ca486dce.chunk.js",
+    "static/css/main.6c147bf5.chunk.css",
+    "static/js/main.9782c810.chunk.js"
   ]
 }
