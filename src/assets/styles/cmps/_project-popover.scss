@@ -1,0 +1,55 @@
+.project-popover-container {
+    height: calc(100vh - 64px);
+    
+    background-color: rgb(59,59,59);
+    
+    h1 {
+        color: white;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .header {
+        position: relative;
+        .close-container {
+            position: absolute;
+            right: 0.25rem;
+            top: 0.25rem;
+        }
+    }
+    .filter-container {
+        padding: 0.5rem;
+        input {
+            width: 100%;
+            line-height: 2rem;
+            font-size: 1.125rem;
+            text-align: center;
+        }
+        padding: 0.5rem 0.5rem 2rem;
+    }
+
+    .all-projects-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0.5rem 0.5rem 2rem;
+        background-color: rgb(59,59,59);
+
+    }
+
+    .empty-state-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        min-height: 50%;
+        h3 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 1.125rem;
+        }
+    }
+    
+}

@@ -1,16 +1,17 @@
+import { Tooltip } from '@material-ui/core'
 import React from 'react'
 
-export function ProjectPreview({project}) {
+export function ProjectPreview({ project }) {
 
     function onClickProject() {
         window.open(project.link)
     }
 
-    
+
+
     return (
         <div className="project-preview-container">
-            <div className="project-img" style={{backgroundImage:`url(${project.img.default}`}} />
-            
+            <div className="project-img" style={{ backgroundImage: `url(${project.img.default}` }} />
             <div className="project-txt">
                 <div className="project-title">
                     <h3>{project.title}</h3>
@@ -22,7 +23,16 @@ export function ProjectPreview({project}) {
                 <div className="tools-used-container">
                     <h4>Tools used</h4>
                     <ul>
-                        {project.tech.map((item,idx) => <li key={idx}>{item}</li>)}
+                        {project.tech.map((item, idx) => {
+                            return (<li key={idx}>
+                                <Tooltip title={item.text}>
+                                    <div className="tool-img-container">
+                                        <img src={item.logo} alt={item.text} />
+                                    </div>
+                                </Tooltip>
+                            </li>)
+                        }
+                        )}
                     </ul>
                 </div>
             </div>

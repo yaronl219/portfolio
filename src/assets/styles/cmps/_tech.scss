@@ -6,29 +6,25 @@
     text-align: center;
     color: white;
     position: relative;
-    .cutoff-placeholder {
-        height: 10rem;
-    }
+
     .horizontal-cutoff {
         position: absolute;
         width: 100%;
         height: 8rem;
         top: -1px;
         z-index: 1;
-        background-image: linear-gradient(183deg, rgb(64,64,64) 50%, rgba(0,0,0,0) 50%);
+        background-image: linear-gradient(183deg, rgb(64,64,64) 49%, rgba(0,0,0,0) 51%);
       }
 }
 
 .tab {
-    
-    background: linear-gradient(90deg, rgba(64,64,64,1) 0%, rgba(32,32,32,1) 10%, rgba(32,32,32,1) 90%, rgba(64,64,64,1) 100%);
-    
     transform: translate3d(0,0,0);
         padding: 10px 0px;
-    transition: 0.3s;
+    transition: 0.5s;
     .title {
         // transform: translateZ(0);
-        transition: 0.3s;
+
+        transition: 0.5s;
     }
     .content {
         transform: translateZ(0);
@@ -36,22 +32,32 @@
     }
 }
 
+
 .tab-closed {
-    transform: translateZ(0);
+    color: rgb(32,32,32);
+
     width: 80px;
     &:hover .title-closed {
         transition: 0.1s;
         color: red;
     }
 
+    background: linear-gradient(90deg, rgba(64,64,64,1) 0%,  rgb(32,32,32) 1%, rgb(32,32,32) 99%, rgba(64,64,64,1) 100%);
+    .title {
+        color: #FAFAFA;
+    }
     cursor: pointer;
     img {
         width: 0;
     }
 }
 
+.cutoff-placeholder {
+    height: 12rem;
+}
 .tab-open {
-    transform: translateZ(360);
+
+    background: linear-gradient(90deg, rgba(64,64,64,1) 0%, #F0F0F0 1%, #EFEFEF 99%, rgba(64,64,64,1) 100%);
     flex-grow: 1;
     overflow: hidden;
     display: flex;
@@ -72,19 +78,19 @@
         background-size: contain;
 
     }
+    .title {
+        color: rgb(32,32,32)
+    }
     .item-text {
-        color: white;
+        color: rgb(32,32,32);
         font-size: 120%;
         &:hover {
-            color: whitesmoke;
+            color: rgb(64,64,64);
         }
     }
 }
 
-.title {
-    color: white;
-    text-shadow: 0px 0px 5rem black;
-}
+
 .title-closed {
     // display: flex;
     cursor: pointer;
@@ -112,7 +118,7 @@ ul {
 .content-open {
     opacity: 1;
     
-    height: 90vh;
+    height: 70vh;
     padding: 2rem;
     ul {
         cursor: default;

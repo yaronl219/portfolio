@@ -15,17 +15,24 @@ import ReactGA from 'react-ga';
 function App() {
 
   const location = useLocation()
+
   const heroRef = useRef()
   const projectsRef = useRef()
   const techRef = useRef()
-
   const contactRef = useRef()
+
   const views = ['/', '/projects', '/tech', '/contact']
   const [elInView, setElInView] = useState('/')
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
 
-  ReactGA.initialize('G-B3YC07Q3DX');
-ReactGA.pageview(window.location.pathname + window.location.search);
+  useEffect(() => {
+    
+    // ReactGA.initialize('G-B3YC07Q3DX');
+    ReactGA.initialize('UA-180403076-1')
+    ReactGA.pageview(window.location.pathname + window.location.search);
+    console.dir(ReactGA)
+  })
+
 
   useEffect(() => {
     onPathChange(location.pathname)
@@ -37,6 +44,9 @@ ReactGA.pageview(window.location.pathname + window.location.search);
       case '/projects':
         ref = projectsRef
         break;
+      case '/projects/all':
+        ref = projectsRef
+        break;
       case '/tech':
         ref = techRef
         break;
@@ -46,7 +56,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
       default:
         ref = heroRef
     }
-    
+
     scrollToRef(ref)
   }
 
@@ -69,7 +79,7 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 
   return (
-    
+
     <div className="App">
       <header className="app-header">
         <Navbar views={views} elInView={elInView} />
@@ -86,18 +96,18 @@ ReactGA.pageview(window.location.pathname + window.location.search);
             <Projects />
           </div>
         </ReactVisibilitySensor>
-          <div className="tech-ref" ref={techRef}>
-            <Tech onTechVisible={onTechVisible} />
-          </div>
+        <div className="tech-ref" ref={techRef}>
+          <Tech onTechVisible={onTechVisible} />
+        </div>
         <ReactVisibilitySensor scrollCheck onChange={onContactVisible}>
           <div className="contact-ref" ref={contactRef}>
-            <Contact elInView={elInView}/>
+            <Contact elInView={elInView} />
           </div>
         </ReactVisibilitySensor>
 
       </main>
       <footer>
-        <Footer elInView={elInView}/>
+        <Footer elInView={elInView} />
       </footer>
     </div>
   );
