@@ -138,6 +138,7 @@ function getTechStack() {
             backgroundImg: 'linear-gradient(315deg, #20bf55 0%, #01baef 74%)',
             content: [
                 { text: 'JavaScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg' },
+                { text: 'TypeScript', logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg' },
                 { text: 'Python', logo: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg' },
                 { text: 'HTML5', logo: 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg' },
                 { text: 'CSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/CSS.3.svg' },
