@@ -5,6 +5,8 @@ const memeImg = require('../assets/imgs/memegen.png')
 const avazonImg = require('../assets/imgs/avazon.png')
 const taskyImg = require('../assets/imgs/tasky.png')
 const cocktailMakerImg = require('../assets/imgs/cocktail-maker.png')
+const catinderImg = require('../assets/imgs/catinder.png')
+const myShop = require('../assets/imgs/myshop.png')
 
 const canvasImg = require('../assets/imgs/html canvas.png')
 
@@ -33,6 +35,20 @@ function getProjects() {
             ]
         },
         {
+            title: 'myShop',
+            img: myShop,
+            description: 'A Vue.js e-commerce platform, with emphasis on the admin-side tools and querying via mongoDB',
+            link: 'https://myvueshop.herokuapp.com/',
+            isDisplayed: true,
+            tech: [
+                { text: 'Vue.js', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg' },
+                { text: 'Vuetify', logo: 'https://cdn.vuetifyjs.com/docs/images/logos/vuetify-logo-light.svg' },
+                { text: 'NodeJS', logo: 'https://upload.wikimedia.org/wikipedia/commons/7/7e/Node.js_logo_2015.svg' },
+                { text: 'MongoDB', logo: 'https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg' },
+                { text: 'SCSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg' },
+            ]
+        },
+        {
             title: 'Weather App',
             img: weatherImg,
             description: 'An app to display the weather using geolocation API, and storing favorites in the global state using Redux',
@@ -50,7 +66,7 @@ function getProjects() {
             img: cocktailMakerImg,
             description: 'An Angular 10 app, built to get better control over Angular. Backend built with node.js and REST API.',
             link: 'https://yaron-cocktail-maker.herokuapp.com/',
-            isDisplayed: true,
+            isDisplayed: false,
             tech: [
                 { text: 'Angular', logo: 'https://upload.wikimedia.org/wikipedia/commons/c/cf/Angular_full_color_logo.svg' },
                 { text: 'Angular Material', logo: 'https://material.angular.io/assets/img/angular-material-logo.svg'},
@@ -60,11 +76,24 @@ function getProjects() {
             ]
         },
         {
+            title: 'CaTinder',
+            img: catinderImg,
+            description: 'A fun project recreating Tinder\'s UI, with cats',
+            link: 'https://yaronl219.github.io/catinder',
+            isDisplayed: true,
+            tech: [
+                { text: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2560px-React-icon.svg.png' },
+                { text: 'MobX', logo: 'https://mobx.js.org/assets/mobx.png' },
+                { text: 'Material UI', logo: 'https://material-ui.com/static/logo_raw.svg' },
+                { text: 'SCSS', logo: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg' }
+            ]
+        },
+        {
             title: 'Tasky',
             img: taskyImg,
             description: 'A super simple app in order to learn MobX and React Beautiful DnD. Also uses a node.js server and mongoDB to save users and tasks, and handle login.',
             link: 'https://tasky-yaron.herokuapp.com/',
-            isDisplayed: true,
+            isDisplayed: false,
             tech: [
                 { text: 'React', logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2560px-React-icon.svg.png' },
                 { text: 'MobX', logo: 'https://mobx.js.org/assets/mobx.png' },

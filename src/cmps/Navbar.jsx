@@ -30,7 +30,7 @@ export default function Navbar({views, elInView}) {
     return (
         <nav>
             <AppBar className="nav-app-bar" position="static">
-                <Tabs value={view} onChange={handleChange} aria-label="simple tabs example">
+                <Tabs value={view} onChange={handleChange} aria-label="simple tabs">
                     <Tab label="About" />
                     <Tab label="Projects"  />
                     <Tab label="Tech"  />
