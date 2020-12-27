@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.6c147bf5.chunk.css",
-    "main.js": "/portfolio/static/js/main.0c8f4416.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0c8f4416.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.462c330a.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.462c330a.js.map",
-    "static/js/2.6ceca274.chunk.js": "/portfolio/static/js/2.6ceca274.chunk.js",
-    "static/js/2.6ceca274.chunk.js.map": "/portfolio/static/js/2.6ceca274.chunk.js.map",
-    "static/js/3.049d7af2.chunk.js": "/portfolio/static/js/3.049d7af2.chunk.js",
-    "static/js/3.049d7af2.chunk.js.map": "/portfolio/static/js/3.049d7af2.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.0be72d1f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0be72d1f.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.7c412d6f.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.7c412d6f.js.map",
+    "static/js/2.826e035b.chunk.js": "/portfolio/static/js/2.826e035b.chunk.js",
+    "static/js/2.826e035b.chunk.js.map": "/portfolio/static/js/2.826e035b.chunk.js.map",
+    "static/js/3.55cb72f4.chunk.js": "/portfolio/static/js/3.55cb72f4.chunk.js",
+    "static/js/3.55cb72f4.chunk.js.map": "/portfolio/static/js/3.55cb72f4.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.6c147bf5.chunk.css.map": "/portfolio/static/css/main.6c147bf5.chunk.css.map",
-    "static/js/2.6ceca274.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6ceca274.chunk.js.LICENSE.txt",
+    "static/js/2.826e035b.chunk.js.LICENSE.txt": "/portfolio/static/js/2.826e035b.chunk.js.LICENSE.txt",
     "static/media/Yaron Lipshitz Full Stack Dev CV.pdf": "/portfolio/static/media/Yaron Lipshitz Full Stack Dev CV.4e27aadc.pdf",
     "static/media/avazon.png": "/portfolio/static/media/avazon.c7fddaa9.png",
     "static/media/catinder.png": "/portfolio/static/media/catinder.05bc4007.png",
     "static/media/cocktail-maker.png": "/portfolio/static/media/cocktail-maker.fec51541.png",
     "static/media/html canvas.png": "/portfolio/static/media/html canvas.edce47ef.png",
     "static/media/memegen.png": "/portfolio/static/media/memegen.05ed1a31.png",
+    "static/media/myshop.png": "/portfolio/static/media/myshop.909d8f1e.png",
     "static/media/opus.png": "/portfolio/static/media/opus.dd2de7f6.png",
     "static/media/snake.png": "/portfolio/static/media/snake.e8145735.png",
     "static/media/tasky.png": "/portfolio/static/media/tasky.ef8b16cf.png",
@@ -25,9 +26,9 @@
     "static/media/global.scss": "/portfolio/static/media/yaron_baw.aaafe80e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.462c330a.js",
-    "static/js/2.6ceca274.chunk.js",
+    "static/js/runtime-main.7c412d6f.js",
+    "static/js/2.826e035b.chunk.js",
     "static/css/main.6c147bf5.chunk.css",
-    "static/js/main.0c8f4416.chunk.js"
+    "static/js/main.0be72d1f.chunk.js"
   ]
 }
